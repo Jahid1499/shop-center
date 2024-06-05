@@ -35,7 +35,7 @@ export default function Product({ details }) {
           {title}
         </Link>
         <span className="text-[#919090]">
-          <Link href={`categories/${category}`}>({category})</Link>
+          <Link href={`/categories/${category}`}>({category})</Link>
         </span>
       </h2>
       <p className="text-[#919090] text-sm ">{description}</p>
