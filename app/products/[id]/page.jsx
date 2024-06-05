@@ -6,6 +6,7 @@
 //   return <div>product details page</div>;
 // }
 
+import RatingReview from "@/app/components/RatingReview";
 import products from "@/app/data/products";
 import Image from "next/image";
 import Link from "next/link";
@@ -61,11 +62,7 @@ const ProductDetails = async ({ params: { id } }) => {
                 <Link href={`/categories/${category}`}>({category})</Link>
               </span>
               <div className="mt-3 flex items-center justify-start gap-1">
-                {/* <img src="./assets/svg/star.svg" width="20px" alt="" />
-                  <img src="./assets/svg/star.svg" width="20px" alt="" />
-                  <img src="./assets/svg/star.svg" width="20px" alt="" />
-                  <img src="./assets/svg/star.svg" width="20px" alt="" />
-                  <img src="./assets/svg/star.svg" width="20px" alt="" /> */}
+                <RatingReview rating={rating} />
               </div>
               <hr className="my-5 bg-black" />
 
