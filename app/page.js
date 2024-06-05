@@ -1,3 +1,4 @@
+import Contact from "./components/Contact";
 import HomePageBanner from "./components/HomePageBanner";
 import ProductItems from "./components/ProductItems";
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <>
       <HomePageBanner />
       <ProductItems />
+      <Contact />
     </>
   );
 }
