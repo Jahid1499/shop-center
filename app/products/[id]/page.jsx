@@ -58,7 +58,7 @@ const ProductDetails = async ({ params: { id } }) => {
                 {title}
               </h1>
               <span className="text-[#919090] my-3">
-                <Link href={`categories/${category}`}>({category})</Link>
+                <Link href={`/categories/${category}`}>({category})</Link>
               </span>
               <div className="mt-3 flex items-center justify-start gap-1">
                 {/* <img src="./assets/svg/star.svg" width="20px" alt="" />

@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="flex gap-5 items-center justify-between lg:w-8/12 text-[#1A1A1A]">
           <div className="flex items-center gap-2">
             <Image
-              src="./assets/menu.svg"
+              src="/assets/menu.svg"
               className="lg:hidden w-5 h-5"
               alt=""
               width={100}
@@ -21,7 +21,7 @@ export default function Navbar() {
         </div>
         <div className="flex items-center justify-end gap-2 lg:gap-5 lg:w-4/12">
           <Image
-            src="./assets/avatar.svg"
+            src="/assets/avatar.svg"
             className="hidden lg:block w-[18px] h-[18px]"
             alt="login account avatar"
             width={100}
@@ -29,7 +29,7 @@ export default function Navbar() {
             priority
           />
           <Image
-            src="./assets/shopping-Cart.svg"
+            src="/assets/shopping-Cart.svg"
             className="block w-5 h-5"
             alt="shopping cart icon"
             width={100}
