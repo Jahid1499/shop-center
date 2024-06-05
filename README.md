@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# এসাইনমেন্টে - ৬ ( Next Js এর উপর প্রথম এসাইনমেন্টে )
 
-## Getting Started
+## এসাইনমেন্টে আপনাকে যা যা করতে হবেঃ
 
-First, run the development server:
+✓ টেমপ্লেটে দেয়া HTML কোড গুলো আপনাকে নেক্সট জেএস এ কনভার্ট করতে হবে ।
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+✓ হোম পেজে আপনাকে ১২ টি প্রোডাক্ট নিয়ে এসে দেখাতে হবে।
+
+✓ প্রোডাক্ট এর নামে ক্লিক করলে, প্রোডাক্ট ডিটেইলস পেজে নিয়ে যাবে, এবং সেই প্রোডাক্টের নাম, ক্যাটেগরি, রেটিং, দাম, ডিস্কাউন্ট এর পরে দাম, ডেস্ক্রিপশন দেখাতে হবে । সেই সাথে প্রোডাক্টের একাধিক ছবি ও দেখাতে হবে (ছবি এর গ্রিড গুলো ফাংশনাল না করলেও চলবে । অর্থাৎ ছবিতে ক্লিক করলে সেটই পরিবর্তন না করলেও চলবে)। প্রোডাক্ট ডিটেইলস পেজের URL দেখতে এমন হবে - /products/{id}
+
+✓ প্রোডাক্ট ডিটেইলস পেজ কিংবা হোম পেজ থেকে Category তে ক্লিক করলে ক্যাটেগরি পেজে নিয়ে যাবে এবং সেই ক্যাটেগরির প্রোডাক্ট দেখাবে । এক্ষেত্রে ক্যাটেগরি পেজ এর URL দেখতে এমন হবে - /category/:categoryName
+
+✓ ক্যাটেগরি পেজের সাইডবার এ সব গুলো ক্যাটেগরি এর নাম দেখাবে এবং ক্যাটেগরি গুলতে ক্লিক করলে, ঐ ক্যাটেগরি এর প্রোডাক্ট গুলো প্রোডাক্ট লিস্ট এ দেখাতে হবে ।
+
+✓ ক্যাটেগরি পেজের সাইডবার এ Active ক্যাটেগরি Highlight করে দেখাতে হবে ।
+
+✓ প্রোডাক্ট এর Structured JSON লিস্ট পাবেন এই URL এ - [Products API](https://dummyjson.com/products) । এবং এই API এর ডকুমেন্টেশন পাবেন এই লিংকে - [API Documentation](https://dummyjson.com/docs/products) ।
+
+✓ এই এসাইনমেন্ট এ আপনি Network Call করে কোনো প্রোডাক্ট নিয়ে এসে দেখাতে পারবেন না । আপনাদের [Products API](https://dummyjson.com/products) থেকে বেশ কিছু প্রোডাক্ট নিয়ে একটি json ফাইল বানাতে হবে । হোম পেজ, প্রোডাক্ট ডিটেইলস পেজ বা ক্যাটেগরি পেজের সব প্রোডাক্ট JSON ফাইল থেকেই Parse করে নিয়ে এসে দেখাতে হবে । আপনি চাইলে একাধিক json ফাইল ও বানাতে পারেন । তবে কোনো Network Call করা যাবে না ।
+
+## How to clone project
+
+```sh
+git clone https://github.com/Jahid1499/shop-center.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to run application
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1.  Go to the cloned project directory
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```sh
+    cd shop-center
+    ```
 
-## Learn More
+2.  Install package
 
-To learn more about Next.js, take a look at the following resources:
+    ```sh
+    npm i
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3.  Run application
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```sh
+    npm run dev
+    ```
 
-## Deploy on Vercel
+4.  Build application
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    ```sh
+    npm run build
+    ```
